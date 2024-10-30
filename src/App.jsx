@@ -1,18 +1,24 @@
 import './App.css'
-import { Banner } from './component/Banner/Banner'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Header } from './component/Header/Header'
-import { Hero } from './component/HeroSection/Hero'
+import { Home } from './Pages/Home';
 
 function App() {
 
 
   return (
     <>
-    <div>
-      <Header/>
-      <Banner/>
-      <Hero/>
-    </div>
+      <div>
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </BrowserRouter>
+        <br />
+        <br />
+        <br />
+      </div>
     </>
   )
 }

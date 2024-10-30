@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faBars } from '@fortawesome/free-solid-svg-icons';
 import { CustomButton } from '../Button/CustomButton';
+import { Link } from 'react-router-dom';
 
 export const    Header = () => {
     return (
@@ -15,7 +16,7 @@ export const    Header = () => {
                             <img src="https://allen.in/logo_light.svg" className="lg:w-24 w-20 " />
                         </div>
                         <div className=" flex space-x-6 ">
-                            <div className='lg:block hidden' >Cources</div>
+                            <Link to="/neet" className='lg:block hidden' >Cources</Link>
                             <div className='lg:block hidden'>Test Series</div>
                             <div className='lg:block hidden'>Scolarships</div>
                             <div className='lg:block hidden'>Result</div>
