@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faBars } from '@fortawesome/free-solid-svg-icons';
+import { CustomButton } from '../Button/CustomButton';
 
-export const Header = () => {
+export const    Header = () => {
     return (
         <>
             <header>
@@ -22,7 +23,7 @@ export const Header = () => {
                             <div className='xl:block hidden'>About us</div>
                         </div>
                     </div>
-                    <div className=" flex lg:space-x-8 space-x-1" >
+                    <div className=" flex lg:space-x-8 space-x-1 " >
                         <div className='flex items-center space-x-2 pr-2'>
 
                             <FontAwesomeIcon icon={faPhone} className="text-customBlue inline lg:hidden items-center" />
@@ -31,7 +32,8 @@ export const Header = () => {
 
                         <button className=" flex items-center border gap-2 rounded-2xl px-5 py-2 text-xs font-bold text-white bg-customBlue hidden lg:inline ">
                             <FontAwesomeIcon icon={faPhone} /> <span className="hidden xl:inline">Talk to us</span> </button>
-                        <button className='flex border-2 border-customBlue px-3 py-1 text-sm font-semibold rounded-2xl items-center hidden lg:inline'>Login </button>
+                        {/* <button className='flex border-2 border-customBlue px-3 py-1 text-sm font-semibold rounded-2xl items-center hidden lg:inline'>Login </button> */}
+                        <CustomButton text ={"Login"} value ={true}/>
                     </div>
                 </div>
             </header>
